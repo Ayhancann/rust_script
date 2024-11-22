@@ -1,152 +1,103 @@
---[[ 
- ____________________________________________________________________________________________
-
-  /BEFORE USING A MACRO IN RUST, YOU NEED TO SELECT, WHAT YOU WANT TO PLAY./
-  /CHOOSE ONE OF THE GIVING SENSITIVITYS AND COPY & PASTE THEM IN RUST F1 CONSOLE./
- ____________________________________________________________________________________________
- 
-  VARIANT 1:
-  /ADS-SENSITIVITY/ -> input.ads_sensitivity 0.8333
-  /SENSITIVITY/ -> YOU CAN SET YOUR OWN SENSITIVITY. BEST SENS TO USE IS 0.4 - 0.6. YOU HAVE TO GO TO LINE: 146 TO SETUP THE SENSITIVITY/
-  /FOV/ -> YOU CAN SET YOUR OWN FOV. YOU HAVE TO GOT TO LINE: 147/
- ____________________________________________________________________________________________
-
-  /SUPPORTED WINDOWS VERSIONS: WIN11, WIN10, WIN8, WIN7 (ver. 2H22 and lower)./
-  INSTRUCTION VIDEO: https://streamable.com/bc8xmm
- ____________________________________________________________________________________________
- 
-  /FOR CORRECT WORK /RAPIDFIRE/ FOR SEMI-AUTOMATIC RIFLE/PISTOL, M92, M39, REVOLVER AND PHYTON/
-  /YOU HAVE TO GO IN RUST TO THE "CONTROLS" TAB AND BIND PRIMARY ATTACK/
-  /ON PAUSE/BREAK AND MOUSE0 /LEFTCLICK/
-  IT HAS TO LOOK EXACTLY THIS: https://i.imgur.com/nc947Nf.png
- ____________________________________________________________________________________________
- 
-  /YOU HAVE TO BIND THE SCRIPTS ON A HOTKEY OF YOUR MOUSE./ 
- 
-  /JUST SWITCH THE "nil" TO YOUR SELECTED MOUSE BUTTON./
-  /IF YOU WANT TO USE ATTACHMENTS THEN CHANGE THE "false" to "true"./
-  /DONT FORGET TO SAVE THE SCRIPT WITH "CTRL + S"./
-  
-  /EXAMPLE: local AK47_2 = 5 <- MAIN GUN
-  /EXAMPLE: local AK47_2_HOLOSIGHT = true <- IF YOU WANT TO ADD ATTACHMENTS THEN SWITCH THE /false/ to /true/
- ____________________________________________________________________________________________
- 
- 
- /IF YOU NEED HELP THEN FEEL FREE TO CONTACT ME!/
-]]
-
---GUNS:
------------------------------------------------------------------
----------------------------AK47----------------------------------
-                        local AK47_2 = 4
-						local AK47_2_HOLOSIGHT = false
-						local AK47_2_X8_SCOPE = false
-						local AK47_2_X16_SCOPE = false
-						local AK47_2_HANDMADESIGHT = false
-						local AK47_2_SILENCER = false
-						local AK47_2_MUZZLEBOOST = false
------------------------------------------------------------------
----------------------------LR300---------------------------------
-                        local LR300_2 = nil
-						local LR300_2_HOLOSIGHT = false
-						local LR300_2_X8_SCOPE = false
-						local LR300_2_X16_SCOPE = false
-						local LR300_2_HANDMADESIGHT = false
-						local LR300_2_SILENCER = false
-						local LR300_2_MUZZLEBOOST = false
------------------------------------------------------------------
----------------------------MP5A4---------------------------------
-                        local MP5A4_2 = nil
-						local MP5A4_2_HOLOSIGHT = false
-						local MP5A4_2_X8_SCOPE = false
-						local MP5A4_2_X16_SCOPE = false
-						local MP5A4_2_HANDMADESIGHT = false
-						local MP5A4_2_SILENCER = false
-						local MP5A4_1_MUZZLEBOOST = false
-                        local MP5A4_2_MUZZLEBOOST = false
------------------------------------------------------------------
----------------------------THOMPSON------------------------------
-                        local THOMPSON_2 = nil
-						local THOMPSON_2_HOLOSIGHT = false
-						local THOMPSON_2_X8_SCOPE = false
-						local THOMPSON_2_X16_SCOPE = false
-						local THOMPSON_2_HANDMADESIGHT = false
-						local THOMPSON_2_SILENCER = false
-						local THOMPSON_2_MUZZLEBOOST = false
------------------------------------------------------------------
----------------------------SMG-----------------------------------
-                        local SMG_2 = nil
-						local SMG_2_HOLOSIGHT = false
-						local SMG_2_X8_SCOPE = false
-						local SMG_2_X16_SCOPE = false
-						local SMG_2_HANDMADESIGHT = false
-						local SMG_2_SILENCER = false
-						local SMG_2_MUZZLEBOOST = false
------------------------------------------------------------------
----------------------------HMLMG---------------------------------
-                        local HMLMG_2 = nil
-						local HMLMG_2_HOLOSIGHT = false
-						local HMLMG_2_X8_SCOPE = false
-						local HMLMG_2_X16_SCOPE = false
-						local HMLMG_2_HANDMADESIGHT = false
-						local HMLMG_2_SILENCER = false
------------------------------------------------------------------
----------------------------M249----------------------------------
-                        local M249_2 = nil
-						local M249_2_HOLOSIGHT = false
-						local M249_2_X8_SCOPE = false
-						local M249_2_X16_SCOPE = false
-						local M249_2_HANDMADESIGHT = false
-						local M249_2_SILENCER = false
------------------------------------------------------------------
----------------------------SAR-----------------------------------
-                        local SAR_2 = nil
-						local SAR_2_HOLOSIGHT = false
-						local SAR_2_X8_SCOPE = false
-						local SAR_2_X16_SCOPE = false
-						local SAR_2_HANDMADESIGHT = false
-						local SAR_2_SILENCER = false
------------------------------------------------------------------
----------------------------M39-----------------------------------
-                        local M39_2 = nil
-						local M39_2_HOLOSIGHT = false
-						local M39_2_X8_SCOPE = false
-						local M39_2_X16_SCOPE = false
-						local M39_2_HANDMADESIGHT = false
-						local M39_2_SILENCER = false
------------------------------------------------------------------
----------------------------SAP-----------------------------------
-                        local SAP_2 = nil
-						local SAP_2_HOLOSIGHT = false
-						local SAP_2_X8_SCOPE = false
-						local SAP_2_X16_SCOPE = false
-						local SAP_2_HANDMADESIGHT = false
-						local SAP_2_SILENCER = false
------------------------------------------------------------------
----------------------------M92-----------------------------------
-                        local M92_2 = nil
-						local M92_2_HOLOSIGHT = false
-						local M92_2_X8_SCOPE = false
-						local M92_2_X16_SCOPE = false
-						local M92_2_HANDMADESIGHT = false
-						local M92_2_SILENCER = false
------------------------------------------------------------------
----------------------------PYTHON--------------------------------
-                        local PYTHON_2 = 5
-						local PYTHON_2_HOLOSIGHT = false
-						local PYTHON_2_X8_SCOPE = false
-						local PYTHON_2_X16_SCOPE = false
-						local PYTHON_2_HANDMADESIGHT = false
------------------------------------------------------------------
----------------------------REVOLVER------------------------------
-                        local REVOLVER_1 = nil
-						local REVOLVER_1_SILENCER = false
------------------------------------------------------------------
 --SETTINGS-------------------------------------------------------
-local SENSITIVITY = 0.4 --set your own sensitivity
-local FOV = 78 --set your own fov
+local SENSITIVITY = 0.833 --set your own sensitivity
+local ADS_SENSITIVITY = 0.833 --set your own ads sensitivity
+local FOV = 90 --set your own fov
 local door_unlocker = nil --switch the "nil" to your preferred mouse button
 local key_code = 0 --set your door code here: EXAMPLE: 1234
+-----------------------------------------------------------------
+--GUNS:
+local AK47_2 = 5
+local LR300_2 = nil
+local MP5A4_2 = 4
+local THOMPSON_2 = 3
+local SMG_2 = nil
+local HMLMG_2 = nil
+local M249_2 = nil
+local SAR_2 = nil
+local M39_2 = nil
+local SAP_2 = nil
+local M92_2 = nil
+local PYTHON_2 = nil
+local REVOLVER_1 = nil
+---------------------------AK47----------------------------------
+local AK47_2_HOLOSIGHT = false
+local AK47_2_X8_SCOPE = false
+local AK47_2_X16_SCOPE = false
+local AK47_2_HANDMADESIGHT = false
+local AK47_2_SILENCER = false
+local AK47_2_MUZZLEBOOST = false
+---------------------------LR300---------------------------------
+local LR300_2_HOLOSIGHT = false
+local LR300_2_X8_SCOPE = false
+local LR300_2_X16_SCOPE = false
+local LR300_2_HANDMADESIGHT = false
+local LR300_2_SILENCER = false
+local LR300_2_MUZZLEBOOST = false
+---------------------------MP5A4---------------------------------
+local MP5A4_2_HOLOSIGHT = true
+local MP5A4_2_X8_SCOPE = false
+local MP5A4_2_X16_SCOPE = false
+local MP5A4_2_HANDMADESIGHT = false
+local MP5A4_2_SILENCER = false
+local MP5A4_1_MUZZLEBOOST = false
+local MP5A4_2_MUZZLEBOOST = false
+---------------------------THOMPSON------------------------------
+local THOMPSON_2_HOLOSIGHT = true
+local THOMPSON_2_X8_SCOPE = false
+local THOMPSON_2_X16_SCOPE = false
+local THOMPSON_2_HANDMADESIGHT = false
+local THOMPSON_2_SILENCER = false
+local THOMPSON_2_MUZZLEBOOST = false
+---------------------------SMG-----------------------------------
+local SMG_2_HOLOSIGHT = false
+local SMG_2_X8_SCOPE = false
+local SMG_2_X16_SCOPE = false
+local SMG_2_HANDMADESIGHT = false
+local SMG_2_SILENCER = false
+local SMG_2_MUZZLEBOOST = false
+---------------------------HMLMG---------------------------------
+local HMLMG_2_HOLOSIGHT = false
+local HMLMG_2_X8_SCOPE = false
+local HMLMG_2_X16_SCOPE = false
+local HMLMG_2_HANDMADESIGHT = false
+local HMLMG_2_SILENCER = false
+---------------------------M249----------------------------------
+local M249_2_HOLOSIGHT = false
+local M249_2_X8_SCOPE = false
+local M249_2_X16_SCOPE = false
+local M249_2_HANDMADESIGHT = false
+local M249_2_SILENCER = false
+---------------------------SAR-----------------------------------
+local SAR_2_HOLOSIGHT = false
+local SAR_2_X8_SCOPE = false
+local SAR_2_X16_SCOPE = false
+local SAR_2_HANDMADESIGHT = false
+local SAR_2_SILENCER = false
+---------------------------M39-----------------------------------
+local M39_2_HOLOSIGHT = false
+local M39_2_X8_SCOPE = false
+local M39_2_X16_SCOPE = false
+local M39_2_HANDMADESIGHT = false
+local M39_2_SILENCER = false
+---------------------------SAP-----------------------------------
+local SAP_2_HOLOSIGHT = false
+local SAP_2_X8_SCOPE = false
+local SAP_2_X16_SCOPE = false
+local SAP_2_HANDMADESIGHT = false
+local SAP_2_SILENCER = false
+---------------------------M92-----------------------------------
+local M92_2_HOLOSIGHT = false
+local M92_2_X8_SCOPE = false
+local M92_2_X16_SCOPE = false
+local M92_2_HANDMADESIGHT = false
+local M92_2_SILENCER = false
+---------------------------PYTHON--------------------------------
+local PYTHON_2_HOLOSIGHT = false
+local PYTHON_2_X8_SCOPE = false
+local PYTHON_2_X16_SCOPE = false
+local PYTHON_2_HANDMADESIGHT = false
+---------------------------REVOLVER------------------------------
+local REVOLVER_1_SILENCER = false
 -----------------------------------------------------------------
 
 --EXTRA_PART-----------------------------------------------------
